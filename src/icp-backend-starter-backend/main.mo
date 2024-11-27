@@ -1,6 +1,6 @@
-//Nombre:
-//País:
-//Experiencia:
+//Nombre: Luis Vargas
+//País: México
+//Experiencia: Sin
 actor Nombre {
   var nombre: Text = "";
 
