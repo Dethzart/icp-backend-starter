@@ -1,13 +1,26 @@
 //Nombre: Luis Vargas
 //País: México
-//Experiencia: Sin
+//Experiencia: Sin experiencia
 actor Nombre {
-  var nombre: Text = "";
+  stable var nombre: Text = "";
+  stable var contador: Int = 0;
 
-  public query func obtenernombre(): async Text {
+  public func aumentarContador() {
+    //contador := contador + 1;
+    contador += 1;
+  };
+
+  public func decrementarContador(): async Int {
+    //contados := contador - 1;
+    contador -= 1;
+    return contador;
+  };
+
+  public query func obtenerNombre(): async Text {
     return nombre;
   };
-  public func guardarnombre(name: Text) {
+
+  public func guardarNombre(name: Text) {
     nombre := name;
-  }
+  };
 };
